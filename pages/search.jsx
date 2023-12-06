@@ -3,7 +3,7 @@ import Head from "next/head";
 import sessionOptions from "../config/session";
 import Header from "../components/header";
 import { useState, useRef } from "react";
-import styles from "../styles/Search.module.css";
+import styles from "../styles/search.module.css";
 import ArticlesList from "../components/articlesList";
 import db from "../db";
 

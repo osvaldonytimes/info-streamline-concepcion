@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Link from "next/link";
-import styles from "../styles/SavedArticles.module.css";
+import styles from "../styles/savedArticles.module.css";
 import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import Header from "../components/header";
-import ArticlesList from "../components/ArticlesList";
+import ArticlesList from "../components/articlesList";
 import db from "../db";
 
 export const getServerSideProps = withIronSessionSsr(
