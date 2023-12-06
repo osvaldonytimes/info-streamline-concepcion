@@ -41,8 +41,8 @@ InfoStreamline is a research-oriented web application tailored for academics, jo
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB/YOUR_PROJECT
-cd YOUR_PROJECT
+git clone https://github.com/osvaldonytimes/info-streamline-concepcion
+cd info-streamline-concepcion
 npm install
 ```
 
