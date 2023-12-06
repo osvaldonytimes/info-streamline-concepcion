@@ -1,0 +1,48 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.searchCallout {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.faq {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faqTitle {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.faqText {
+  font-size: 1.2rem;
+}
+
+.humor {
+  margin-top: 20px;
+  background: #e1eaff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.humorText {
+  font-style: italic;
+}
