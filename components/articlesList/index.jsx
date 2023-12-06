@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ArticlesList.module.css";
+import styles from "./styles.module.css";
 import { useState } from "react";
 import Link from "next/link";
 

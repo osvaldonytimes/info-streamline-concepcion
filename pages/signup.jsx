@@ -3,7 +3,7 @@ import Link from "next/link";
 import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import { useState } from "react";
-import styles from "../styles/Login.module.css"; // Reusing Login styles
+import styles from "../styles/login.module.css";
 import { useRouter } from "next/router";
 import Header from "../components/header";
 

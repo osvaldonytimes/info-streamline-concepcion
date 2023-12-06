@@ -2,7 +2,7 @@ import Head from "next/head";
 import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import Header from "../components/header";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/home.module.css";
 import Link from "next/link";
 
 export const getServerSideProps = withIronSessionSsr(

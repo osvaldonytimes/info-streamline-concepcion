@@ -1,6 +1,6 @@
 import Link from "next/link";
 import useLogout from "../../hooks/useLogout";
-import styles from "./header.module.css";
+import styles from "./styles.module.css";
 
 export default function Header(props) {
   const logout = useLogout();
