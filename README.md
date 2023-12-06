@@ -6,7 +6,7 @@ InfoStreamline is a research-oriented web application tailored for academics, jo
 
 ## Demo
 
-[![Watch the video](./infostreamline.jpg)](./infostreamline.webm)
+[![Watch the video](./infostreamline.webm)
 
 ## Technology Stack
 
