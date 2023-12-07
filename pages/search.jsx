@@ -6,6 +6,7 @@ import { useState, useRef } from "react";
 import styles from "../styles/search.module.css";
 import ArticlesList from "../components/articlesList";
 import db from "../db";
+import { NEWS_API_MOCK_RESPONSE } from "../mocks/newsApiMock";
 
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req }) {
@@ -47,16 +48,21 @@ export default function Search(props) {
     if (fetching || !searchTerm.trim() || searchTerm === previousQuery) return;
     setPreviousQuery(searchTerm);
     setFetching(true);
-    const res = await fetch(
-      `https://newsapi.org/v2/everything?q=${encodeURIComponent(
-        searchTerm
-      )}&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}`
-    );
-    if (res.status !== 200) {
-      setFetching(false);
-      return;
+    let response;
+    if (process.env.NODE_ENV === "production") {
+      response = NEWS_API_MOCK_RESPONSE;
+    } else {
+      const res = await fetch(
+        `https://newsapi.org/v2/everything?q=${encodeURIComponent(
+          searchTerm
+        )}&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}`
+      );
+      if (res.status !== 200) {
+        setFetching(false);
+        return;
+      }
+      response = await res.json();
     }
-    const response = await res.json();
     const data = {
       ...response,
       articles: response.articles.map((article) => {
